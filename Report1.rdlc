@@ -1,0 +1,12 @@
+using Microsoft.Reporting.WinForms;
+using System.IO;
+
+public void ExportReportToPDF()
+{
+    LocalReport report = new LocalReport();
+    report.ReportPath = "Report1.rdlc"; // Change to your actual RDLC file path
+
+    byte[] bytes = report.Render("PDF");
+
+    File.WriteAllBytes("Report.pdf", bytes);
+}
