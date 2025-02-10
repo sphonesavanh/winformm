@@ -19,11 +19,12 @@ namespace Lecture1_15Oct24
             //Application.Run(new Form1());
             //Application.Run(new Form2());
             //Application.Run(new Form3());
-            //Application.Run(new frmLogin());
+            Application.Run(new frmLogin());
             //Application.Run(new supplier());
 
+            //Application.Run(new frmProducts());
             //Application.Run(new frmCustomer());
-            Application.Run(new frmLogin());
+            //Application.Run(new frmOrders());
             //Application.Run(new frmMainMenu());
             //Application.Run(new frmSupplier());
         }

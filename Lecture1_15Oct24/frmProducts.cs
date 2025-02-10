@@ -33,8 +33,6 @@ namespace Lecture1_15Oct24
             DataTable dt = new DataTable();
             dt.Load(sqlDr);
             dgvShowdata.DataSource = dt;
-            //dgvShowdata.Columns[0].HeaderText = "ລຳດັບ";
-            //dgvShowdata.Columns[0].Visible = true;
             dgvShowdata.Columns[0].HeaderText = "ລະຫັດສິນຄ້າ";
             dgvShowdata.Columns[1].HeaderText = "ຊື່ສິນຄ້າ";
             dgvShowdata.Columns[2].HeaderText = "ຈຳນວນ";

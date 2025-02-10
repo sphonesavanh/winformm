@@ -29,19 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dtsProducts = new Lecture1_15Oct24.dtsProducts();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.viewProductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.view_ProductsTableAdapter = new Lecture1_15Oct24.dtsProductsTableAdapters.View_ProductsTableAdapter();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtsProducts = new Lecture1_15Oct24.dtsProducts();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsProducts)).BeginInit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.view_ProductsTableAdapter = new Lecture1_15Oct24.dtsProductsTableAdapters.View_ProductsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.viewProductsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsProducts)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // viewProductsBindingSource
+            // 
+            this.viewProductsBindingSource.DataMember = "View_Products";
+            this.viewProductsBindingSource.DataSource = this.dtsProducts;
+            // 
+            // dtsProducts
+            // 
+            this.dtsProducts.DataSetName = "dtsProducts";
+            this.dtsProducts.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel1
             // 
@@ -53,17 +63,22 @@
             this.panel1.Size = new System.Drawing.Size(1396, 69);
             this.panel1.TabIndex = 0;
             // 
-            // reportViewer1
+            // label1
             // 
-            reportDataSource4.Name = "DataSet1";
-            reportDataSource4.Value = this.viewProductsBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Lecture1_15Oct24.rptProduct.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 87);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1393, 585);
-            this.reportViewer1.TabIndex = 2;
+            this.label1.Font = new System.Drawing.Font("Phetsarath OT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(64, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(298, 48);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "ປ້ອນລະຫັດສິນຄ້າທີ່ຕ້ອງການຄົ້ນຫາ:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(358, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(324, 34);
+            this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
@@ -78,36 +93,21 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dtsProducts
+            // reportViewer1
             // 
-            this.dtsProducts.DataSetName = "dtsProducts";
-            this.dtsProducts.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewProductsBindingSource
-            // 
-            this.viewProductsBindingSource.DataMember = "View_Products";
-            this.viewProductsBindingSource.DataSource = this.dtsProducts;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.viewProductsBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Lecture1_15Oct24.rptProduct.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 87);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1393, 585);
+            this.reportViewer1.TabIndex = 2;
             // 
             // view_ProductsTableAdapter
             // 
             this.view_ProductsTableAdapter.ClearBeforeFill = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(358, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(324, 34);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Phetsarath OT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(64, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 48);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ປ້ອນລະຫັດສິນຄ້າທີ່ຕ້ອງການຄົ້ນຫາ:";
             // 
             // frmrptProductViewer
             // 
@@ -119,10 +119,10 @@
             this.Name = "frmrptProductViewer";
             this.Text = "frmrptProductViewer";
             this.Load += new System.EventHandler(this.frmrptProductViewer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.viewProductsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsProducts)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsProducts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProductsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

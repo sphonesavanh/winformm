@@ -135,6 +135,7 @@
             this.ຂມນປະເພດສນຄາToolStripMenuItem.Name = "ຂມນປະເພດສນຄາToolStripMenuItem";
             this.ຂມນປະເພດສນຄາToolStripMenuItem.Size = new System.Drawing.Size(250, 34);
             this.ຂມນປະເພດສນຄາToolStripMenuItem.Text = "ຂໍ້ມູນປະເພດສິນຄ້າ";
+            this.ຂມນປະເພດສນຄາToolStripMenuItem.Click += new System.EventHandler(this.ຂມນປະເພດສນຄາToolStripMenuItem_Click);
             // 
             // ຂມນສນຄາToolStripMenuItem
             // 
@@ -159,6 +160,7 @@
             this.ສງຊສນຄາToolStripMenuItem.Name = "ສງຊສນຄາToolStripMenuItem";
             this.ສງຊສນຄາToolStripMenuItem.Size = new System.Drawing.Size(238, 34);
             this.ສງຊສນຄາToolStripMenuItem.Text = "ສັ່ງຊື້ສິນຄ້າ";
+            this.ສງຊສນຄາToolStripMenuItem.Click += new System.EventHandler(this.ສງຊສນຄາToolStripMenuItem_Click);
             // 
             // ນຳສນຄາເຂາຮານToolStripMenuItem
             // 

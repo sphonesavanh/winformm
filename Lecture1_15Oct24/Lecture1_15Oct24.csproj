@@ -120,11 +120,23 @@
     <Compile Include="frmMainMenu.Designer.cs">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrders.Designer.cs">
+      <DependentUpon>frmOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProducts.Designer.cs">
       <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductSearch.Designer.cs">
+      <DependentUpon>frmProductSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProductType.cs">
       <SubType>Form</SubType>
@@ -178,8 +190,14 @@
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOrders.resx">
+      <DependentUpon>frmOrders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProducts.resx">
       <DependentUpon>frmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductSearch.resx">
+      <DependentUpon>frmProductSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProductType.resx">
       <DependentUpon>frmProductType.cs</DependentUpon>

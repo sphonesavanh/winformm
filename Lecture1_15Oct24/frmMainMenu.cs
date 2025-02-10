@@ -68,5 +68,21 @@ namespace Lecture1_15Oct24
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
+
+        private void ຂມນປະເພດສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProductType frm = new frmProductType();
+            frm.Show();
+            frm.WindowState = FormWindowState.Maximized;
+            frm.MdiParent = this;
+        }
+
+        private void ສງຊສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOrders frm = new frmOrders();
+            frm.Show();
+            frm.WindowState = FormWindowState.Maximized;
+            frm.MdiParent = this;
+        }
     }
 }
